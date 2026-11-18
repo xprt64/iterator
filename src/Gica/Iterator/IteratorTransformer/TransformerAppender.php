@@ -11,7 +11,7 @@ class TransformerAppender implements \IteratorAggregate
     /**
      * @var \Gica\Iterator\IteratorTransformerPipe[]
      */
-    private $iteratorTransformers;
+    private array $iteratorTransformers;
 
     public function __construct(\Gica\Iterator\IteratorTransformerPipe ...$iteratorTransformers)
     {

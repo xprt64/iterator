@@ -8,14 +8,8 @@ namespace Gica\Iterator\IteratorTransformer;
 
 class IteratorLimit
 {
-    /**
-     * @var int
-     */
-    private $numberOfItemsToLimitTo;
-
-    public function __construct(int $numberOfItemsToLimitTo)
+    public function __construct(private int $numberOfItemsToLimitTo)
     {
-        $this->numberOfItemsToLimitTo = $numberOfItemsToLimitTo;
     }
 
     function __invoke($inputIterator)
