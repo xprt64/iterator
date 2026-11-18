@@ -35,6 +35,7 @@ class TransformerAppender implements \IteratorAggregate
     /**
      * @inheritdoc
      */
+    #[\Override]
     public function getIterator()
     {
         foreach ($this->iteratorTransformers as $iteratorTransformer) {

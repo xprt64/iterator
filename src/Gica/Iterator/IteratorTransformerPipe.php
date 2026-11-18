@@ -49,6 +49,7 @@ class IteratorTransformerPipe implements \IteratorAggregate
      * <b>Traversable</b>
      * @since 5.0.0
      */
+    #[\Override]
     public function getIterator()
     {
         return $this->transformIterator($this->start);
